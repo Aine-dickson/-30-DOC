@@ -1,0 +1,62 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+}
+.ball8{
+    border: 0.1rem solid;
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    animation: shake 1s linear infinite alternate-reverse;
+}
+.outer-circle{
+    height: 7.5rem;
+    width: 7.5rem;
+    margin: auto;
+    border-radius: 50%;
+    border: 0.4rem solid white;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+}
+.ball8 > div:last-child{
+    margin-top: -0.4rem;
+}
+.query-field{
+    box-shadow: 0 0 0.5rem black;
+    height: 3rem;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+input, input:focus{
+    border: 0;
+    outline: 0;
+    font-size: large;
+}
+button{
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border: 0;
+    box-shadow: 0 0 0.3rem black;
+    font-weight: bold;
+    font-size: large;
+}
+@keyframes shake{
+    from {
+        transform: translateX(-20rem) rotateX(0) rotateY(0);
+    } to {
+        transform: translateX(20rem) rotateX(360deg) rotateY(360deg);
+    }
+}
