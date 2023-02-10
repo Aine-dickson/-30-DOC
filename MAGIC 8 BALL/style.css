@@ -7,13 +7,13 @@ body{
     height: 15rem;
     width: 15rem;
     border-radius: 50%;
+    box-shadow: 0 0 1rem black;
     margin: auto;
     margin-top: 2rem;
     margin-bottom: 2rem;
     background-color: black;
     display: flex;
     flex-direction: column;
-    animation: shake 1s linear infinite alternate-reverse;
 }
 .outer-circle{
     height: 7.5rem;
@@ -44,6 +44,7 @@ input, input:focus{
     border: 0;
     outline: 0;
     font-size: large;
+    flex-grow: 1;
 }
 button{
     border-top-right-radius: 1rem;
@@ -52,11 +53,4 @@ button{
     box-shadow: 0 0 0.3rem black;
     font-weight: bold;
     font-size: large;
-}
-@keyframes shake{
-    from {
-        transform: translateX(-20rem) rotateX(0) rotateY(0);
-    } to {
-        transform: translateX(20rem) rotateX(360deg) rotateY(360deg);
-    }
 }
