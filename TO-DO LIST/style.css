@@ -1,0 +1,135 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+.head-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    font-size: larger;
+    font-weight: bold;
+}
+#title{
+    color: blue;
+    font-size: x-large;
+    font-weight: 700;
+    text-shadow: 0 0 0.5rem;
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 5;
+    font-size: xx-large;
+    color: orangered;
+}
+.overlay > span{
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    font-size: xx-large;
+    color: red;
+}
+.msg{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.alpha{
+    display: flex;
+    font-size: medium;
+    font-weight: lighter;
+    justify-content: space-between;
+    padding: 0 0.2rem;
+    margin-top: 0.5rem;
+}
+.opt > span{
+    margin: 0 0.3rem;
+}
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: larger;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.5rem;
+    font-size: larger;
+}
+.hr{
+    border: 0;
+    border-bottom: 0.1rem solid whitesmoke;
+    margin-bottom: 0.5rem;
+}
+ul{
+    margin: 0;
+    margin-top: 1rem;
+    padding-left: 0;
+}
+li{
+    list-style: none;
+    padding: 0.5rem;
+    padding-left: 0;
+}
+.list-item{
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem;
+    font-size: x-large;
+}
+.add,
+.push{
+    font-size: larger;
+    padding: 0.2rem;
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    border: 0;
+    background-color: blue;
+    color: white;
+    position: fixed;
+    bottom: 4rem;
+    right: 1rem;
+}
+.hidden{
+    display: none;
+}
+form{
+    margin-top: 1.5rem;
+    font-size: larger;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+input,
+input:focus{
+    outline: none;
+    height: 2rem;
+    font-size: large;
+    font-weight: bold;
+    padding: 0.2rem;
+    box-shadow: inset 0 0 0.5rem black;
+    border: 0.1rem solid gray;
+    border-radius: 0.2rem;
+}
+textarea{
+    margin-top: 0.5rem;
+    height: 8rem;
+    border: 0.1rem solid gray;
+    border-radius: 0.3rem;
+    padding: 0.2rem;
+    font-size: large;
+    outline: none;
+}
