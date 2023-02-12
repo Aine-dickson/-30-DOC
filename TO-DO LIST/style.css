@@ -87,6 +87,9 @@ li{
     padding: 0.2rem;
     font-size: x-large;
 }
+.to-do-item{
+    flex-grow: 1;
+}
 .add,
 .push{
     font-size: larger;
@@ -132,4 +135,29 @@ textarea{
     padding: 0.2rem;
     font-size: large;
     outline: none;
+}
+.active-tab{
+    color: blue;
+    font-weight: bolder;
+}
+.warning{
+    color: red;
+    margin-top: 2rem;
+}
+.heading{
+    font-size: x-large;
+    text-align: center;
+    padding: 0.3rem;
+    color: blue;
+    text-shadow: 0 0 0.5rem blue;
+}
+.preview-body{
+    padding: 0.2rem;
+    font-size: large;
+    width: 95%;
+    color: goldenrod;
+}
+.selector{
+    height: 1rem;
+    width: 1rem;
 }
