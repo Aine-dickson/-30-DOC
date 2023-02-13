@@ -5,11 +5,11 @@ let startButton = document.querySelector('.start');
 let stopButton = document.querySelector('.stop')
 let guide = document.querySelector(".alert")
 
-let speech = ''
-
 startButton.addEventListener('click', (e) => {
     if(speech.length){
         speech += ' '
+    } else {
+        speech = ''
     }
     robot.start()
     startButton.classList.add('hidden');
