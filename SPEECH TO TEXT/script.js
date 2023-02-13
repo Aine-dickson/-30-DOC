@@ -60,7 +60,7 @@ robot.onerror = function(){
 
 robot.onresult = function(event){
     let detected = event.resultIndex;
-    let transcript = event.results[detected][1].transcript;
+    let transcript = event.results[0][0].transcript;
     speech += transcript;
 
     guide.classList.remove('hidden')
